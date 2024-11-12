@@ -33,8 +33,8 @@ Extra info attributet title:
 */
 
 const main = document.querySelector("main");
-const nRows = 255;
-const nCols = 255;
+const nRows = 1080;
+const nCols = 1080;
 
 main.style.gridTemplateRows = `repeat(${nRows}, 1fr)`;
 main.style.gridTemplateColumns = `repeat(${nCols}, 1fr)`;

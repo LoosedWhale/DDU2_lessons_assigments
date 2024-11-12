@@ -14,17 +14,22 @@ let n1 = 42;
 let n2 = 2;
 
 // Vad kommer att loggas på konsolen?
-console.log(n1 + n2);
+console.log(n1 + n2); 
+//Svar: 44
 
 // Vad kommer att loggas på konsolen?
-console.log(n1 * n2);
+console.log(n1 * n2); 
+//Svar: 84
 
 // Vad kommer att loggas på konsolen?
-console.log("c1");
+console.log("c1"); 
+//Svar: c1
 
 // Vad kommer att loggas på konsolen?
-console.log(c1);
+console.log(c1); 
+//Svar: WDU
 
 // Vad kommer att loggas på konsolen?
 console.log(n1 * c2);
+//Svar: NaN
 

@@ -13,4 +13,19 @@
 // Logga på konsolen resultatet av att multiplicera 345 gånger 123
 
 
+const n1 = 10;
+
+const n2 = 30;
+
+let s1 = n1 + n2;
+
+let p1 = n1 * n2;
+
+let s2 = s1 + p1;
+
+console.log(s2);
+
+console.log(345 * 123);
+
+
 

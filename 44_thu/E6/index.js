@@ -9,8 +9,9 @@ console.log("n2 är", n2);
 // Skriv koden som behövs för att variablerna n1 och n2 ska swappa sina värden
 // (du behöver skapa en ny variabel)
 
-
-
+let temp = n1;
+n1 = n2;
+n2 = temp;
 
 // Så att detta blir korrekt
 console.log("Nu har vi swappat variablernas värden");
