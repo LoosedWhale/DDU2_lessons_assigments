@@ -11,32 +11,42 @@ let a3 = [];
 
 // Vad kommer att loggas på konsolen?
 console.log(a1[23]);
+//Svar: undefined
 
 // Vad kommer att loggas på konsolen?
 console.log(a1[2]);
+//Svar: 65
 
 // Vad kommer att loggas på konsolen?
 a2.push(a1[2]);
 console.log(a2[0]);
+//Svar: 65
 
 // Vad kommer att loggas på konsolen?
 a3[0] = a2[0];
 console.log(a3[0]);
+//Svar: 65
 
 // Vad kommer att loggas på konsolen?
 a1[2] = 42;
 console.log(a2[0]);
+//Svar: 65
 
 // Vad kommer att loggas på konsolen?
 a1.splice(1, 2);
 console.log(a1[3]);
+//Svar: 1 
 
 // Vad kommer att loggas på konsolen?
 console.log(a1.length);
+//Svar: 5
 
 // Lurigt!! Viktigt att du förstår vad som händer här
 // Vad kommer att loggas på konsolen?
 a3.push(a1);
 console.log(a3[2]);
+//Svar: undefined
+
 console.log(a3.length);
+//Svar: 2
 

@@ -11,9 +11,15 @@ const a1 = [23, 2, 65, 1, 63, 1, 5];
 // Vad kommer att loggas på konsolen?
 a1.splice(0, 2);
 console.log(a1[23]);
+//Svar: undefined
 
 // Vad kommer att loggas på konsolen?
 console.log(a1[2]);
+//Svar: 63
+
+
+//Resten kommer ha fel medelande då a2 inte finns 
+
 
 // Vad kommer att loggas på konsolen?
 a2.push(a1[2]);

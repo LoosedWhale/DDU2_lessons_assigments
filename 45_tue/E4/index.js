@@ -20,3 +20,21 @@ Hitta längden på arrayen:
     Skriv ut antalet varor i arrayen.
     
 */
+
+
+let shoppingList = ["milk", "bread", "eggs", "butter"];
+
+shoppingList.push("cheese");
+shoppingList.push("fruit");
+
+let breadIndex = shoppingList.indexOf("bread");
+if (breadIndex !== -1) {
+    shoppingList.splice(breadIndex, 1);
+}
+
+console.log(shoppingList[0]); 
+console.log(shoppingList[shoppingList.length - 1]); 
+console.log(shoppingList[2]); 
+
+
+console.log(shoppingList.length); 

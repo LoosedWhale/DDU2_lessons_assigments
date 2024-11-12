@@ -28,15 +28,20 @@ const konstant2 = [
 
 // Vad kommer att loggas på konsolen?
 console.log(konstant2[konstant2[0].key2].key1);
+//Svar: 8
 
 // Vad kommer att loggas på konsolen?
 console.log(konstant1.key1[konstant1.key2.key4[1]]);
+//Svar: 2
 
 // Vad kommer att loggas på konsolen?
 console.log(konstant2[konstant1.key2.key1].key1[1] + konstant1.key1[3]);
+//Svar 11
 
 // Vad kommer att loggas på konsolen?
 console.log(konstant1.key1[0] + konstant1.key1[0+1]);
+//Svar: 01
 
 // Vad kommer att loggas på konsolen?
 console.log(konstant2[0].key1 + konstant2[3-2].key1[0]);
+//Svar: 12

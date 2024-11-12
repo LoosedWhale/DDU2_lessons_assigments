@@ -20,3 +20,10 @@ let o_format2 = {
 
 // Ta bort alla pojknamn från arrayen. Skriv ut det första elementet i arrayen
 
+
+let combinedArray = a1.concat(o_format1.firstName, o_format2.name.first, a2);
+console.log(combinedArray);
+
+combinedArray.splice(combinedArray.indexOf("Peter"), 1);
+combinedArray.splice(combinedArray.indexOf("Bruce"), 1);
+console.log(combinedArray[0]);

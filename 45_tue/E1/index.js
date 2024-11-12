@@ -8,4 +8,6 @@ const c4 = " ";
 // WDU är bäst
 // (notera mellanslagen)
 
+const pElement = document.querySelector("p");
 
+pElement.textContent = c1 + c4 + c2 + c4 + c3;

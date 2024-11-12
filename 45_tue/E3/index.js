@@ -35,3 +35,17 @@ const students = [
 // Name: Tina Turner
 // Born: 9 December 2000
 // Studies: Music Studies, Malmö University
+
+let student;
+for (let i = 0; i < students.length; i++) {
+  if (students[i].first_name === "Tina" && students[i].last_name === "Turner") {
+    student = students[i];
+    break;
+  }
+}
+
+if (student) {
+  document.getElementById("name").textContent = `Name: ${student.first_name} ${student.last_name}`;
+  document.getElementById("birth").textContent = `Born: ${student.birth}`;
+  document.getElementById("studies").textContent = `Studies: ${student.program}, ${student.university}`;
+}
