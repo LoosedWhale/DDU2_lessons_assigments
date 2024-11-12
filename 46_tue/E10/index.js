@@ -35,3 +35,17 @@ Extra info attributet title:
 const main = document.querySelector("main");
 const nRows = 255;
 const nCols = 255;
+
+main.style.gridTemplateRows = `repeat(${nRows}, 1fr)`;
+main.style.gridTemplateColumns = `repeat(${nCols}, 1fr)`;
+
+for (let r = 0; r < nRows; r++) {
+  for (let c = 0; c < nCols; c++) {
+    const div = document.createElement("div");
+    div.classList.add("cell");
+    div.style.backgroundColor = `rgb(${r}, ${c}, 255)`;
+    div.title = `rgb(${c}, ${r}, 255)`;
+    main.appendChild(div);
+  }
+}
+

@@ -8,3 +8,14 @@
 // Kom ihåg att link-element ingår i head-elementet.
 
 
+// Skapa en länk till css-filen
+document.head.innerHTML += '<link rel="stylesheet" href="index.css">';
+
+// Hämta befintligt main-element
+const main = document.querySelector('main');
+
+// Fråga efter en siffra med prompt
+const number = prompt('Skriv en siffra');
+for (let i = 1; i <= number; i++) {
+    main.innerHTML += i + '<br>';
+}

@@ -9,3 +9,5 @@ for (let name of names) {
 }
 console.log(a);
 console.log(names[a]);
+
+// Svar: 7, undefined (names[7] är undefined)

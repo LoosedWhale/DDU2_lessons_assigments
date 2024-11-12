@@ -8,3 +8,4 @@ for (let name of names) {
   a--;
 }
 
+// Svar: inget loggas på konsolen

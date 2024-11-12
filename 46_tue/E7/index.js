@@ -9,3 +9,19 @@
 const main = document.querySelector("main");
 const n1 = 5;
 const n2 = 10;
+
+document.head.innerHTML += '<link rel="stylesheet" href="index.css">';
+
+for (let i = 1; i <= n1; i++) {
+    let column = document.createElement('div');
+    column.classList.add('column');
+    main.appendChild(column);
+
+    for (let j = 1; j <= n2; j++) {
+        let p = document.createElement('p');
+        p.textContent = `${i} x ${j} = ${i * j}`;
+        column.appendChild(p);
+    }
+}
+
+
