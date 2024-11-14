@@ -52,15 +52,18 @@ Koda ett program som frågar efter en stads namn (med prompt) och sedan:
 */
 
 let cityName = prompt("Enter a city name: ");
-let city = cities.find(function(city) {
-  return city.name.toLowerCase() === cityName.toLowerCase();
-});
-if (city) {
-  console.log(`${city.name} is in ${city.country} and has ${Math.round(city.inhabitants / 1000)} thousand inhabitants`);
-}
-else {
-  console.log(`${cityName} is not in the database`);
+let cityFound = false;
+
+for (let i = 0; i < cities.length; i++) {
+  if (cities[i].name.toLowerCase() === cityName.toLowerCase()) {
+    console.log(`${cities[i].name} is in ${cities[i].country} and has ${Math.round(cities[i].inhabitants / 1000)} thousand inhabitants`);
+    cityFound = true;
+    break;
+  }
 }
 
+if (!cityFound) {
+  console.log(`${cityName} is not in the database`);
+}
 
 
