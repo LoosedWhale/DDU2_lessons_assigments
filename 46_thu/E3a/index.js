@@ -7,6 +7,14 @@
 // Se bilden
 
 for (let i = 0; i < 1000; i++) {
+    if (i % 2 === 0 && i !== 0) {
+        console.log(i);
+        
+        if (i === 6) {
+            break;
+        }
+    }
+
 }
 
 

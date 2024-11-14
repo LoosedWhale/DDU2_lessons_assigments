@@ -9,3 +9,5 @@ for (let i = 23; i > 21; i--) {
   if (i == 3) { break; }
   if (i == 6) { continue; }
 }
+
+//Inget kommer att loggas på konsolen

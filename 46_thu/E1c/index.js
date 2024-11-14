@@ -10,3 +10,5 @@ if (a != 33) {
     console.log(i);
   }
 }
+
+// Svar: 2 1 0

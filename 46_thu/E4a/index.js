@@ -10,3 +10,11 @@
 // måste alla texter komma på webbsidan.
 // Se videon.
 
+const number = prompt("Ange en siffra");
+const main = document.querySelector("main");
+
+for (let i = 2; i <= 4; i++) {
+    if (number % i === 0) {
+        main.innerHTML += `<p>siffran ${number} är delbar med ${i}</p>`;
+    }
+}

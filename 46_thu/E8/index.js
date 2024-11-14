@@ -50,3 +50,13 @@ Koda ett program som frågar efter en stads namn (med prompt) och sedan:
      Notera att du inte ska logga "295000" utan "295 thousand"
   b) om namnet inte finns i arrayen så ska du logga "X is not in the database", där X är namnet som användaren skrev
 */
+
+let cityName = prompt("Enter a city name: ");
+let city = cities.find(city => city.name === cityName);
+if (city) {
+  console.log(`${city.name} is in ${city.country} and has ${city.inhabitants.toString().slice(0, -3)} thousand inhabitants`);
+}
+else {
+  console.log(`${cityName} is not in the database`);
+}
+
