@@ -14,4 +14,8 @@ function loggingALot (n) {
   console.log("WDU3");
 }
 
+// Om vi kör funktionen loggingALot med argumentet x gånger 
+// Så skirver den ut (WDU1 WDU2 WDU3) x gånger
+
 console.log("WDU4");
+// Här skrivs WDU4 ut

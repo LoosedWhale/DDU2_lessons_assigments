@@ -17,9 +17,14 @@ function f2 (n) {
 }
 
 let a = f1(f2(4));
+// a = 5
 console.log(a);
+// 5
 const b = f2(f1(a++));
+// a = 5 + 1 = 6, b = f2(f1(5)) = f2(4) = 6
 const c = f2(f1(++a));
+// a = 5 + 1 = 6, c = f2(f1(6)) = f2(5) = 7
 console.log(b, c);
+// 6 7
 
 

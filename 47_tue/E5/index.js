@@ -6,6 +6,10 @@ så att koden fungerar som den ska.
 
 */
 
+function f1(a) {
+   return a[0].toLowerCase() === "a";
+}
+
 
 let a = prompt("A word, please");
 if (f1(a)) {

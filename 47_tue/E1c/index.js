@@ -16,5 +16,7 @@ function f2 (n) {
   return n + 2;
 }
 
-let a = f1(1) + f2(3);
+let a = f1(1) + f2(3); 
+// 0 + 3+2 = 5
 console.log(a + f2(a));
+// 5 + 5+2 = 12

@@ -13,13 +13,20 @@ function f (a) {
 
 for (let i = 0; i < f(1); i = f(i)) {
   console.log(i);
+  // 0
+  // 1
 }
 
 for (let i = 0; i < f(1); i = f(i)) {
   console.log(f(i));
+  // 1
+  // 2
 }
+
 
 // Notera att jag har också ändrat villkor-delen i for-loopen
 for (let i = 0; i < f(i); i++) {
   console.log(i);
+  //infinite loop
+  // Condition i < f(i) is always true, i < i+1 
 }

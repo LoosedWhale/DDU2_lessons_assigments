@@ -6,9 +6,6 @@ har jag löst övningen i videon. Hoppas den hjälper!
 Skapa en funktion som tar emot ett argument och:
   1) Kontrollerar att argumentet har typen "siffra" (number på engelska)
      Detta har vi inte sett på viderona. När du ska lära dig något nytt i programmering:
-      A) Fråga ChatGPT
-      B) Kontrollera ChatGPTs svar på MDN eller stackoverflow
-      c) Om det verkar stämma => förstå och använd!
     
   2) Om det var en siffra så ska funktionen logga på konsolen strängen
      "Målet är att bli en duktig utvecklare" lika många 
@@ -29,3 +26,22 @@ klar i huvudet över faktumet att det finns olika typer av värden.
   på prompten, så ska ju "Målet är att bli en duktig utvecklare" loggas fyra gånger.
   Hur åstadkommer vi det i koden?
 */
+
+const userInput = prompt("Skriv en siffra");
+
+
+function checkUserInput (n) {
+   if (isNaN(userInput)) {
+   console.log("Fel argument: Det måste vara en siffra");
+   } else {
+      for (let i = 0; i < userInput; i++) {
+         console.log("Målet är att bli en duktig utvecklare");
+      }
+   }
+}
+
+checkUserInput(userInput); 
+
+
+
+

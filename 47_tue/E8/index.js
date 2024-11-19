@@ -33,3 +33,19 @@ const array2 = [
   "mjuk bekväm soffa", "varm kopp kaffe", "kall frisk luft", "lång skön semester", "fin gammal stad",
   "ny spännande bok", "stor grön äng", "liten mysig café"
 ];
+
+function longestString(str1, str2) {
+  if (str1.length > str2.length) {
+    return str1;
+  } else {
+    return str2;
+  }
+}
+
+function longestStringInArray(arr) {
+  let longest = "";
+  for (let i = 0; i < arr.length; i++) {
+    longest = longestString(longest, arr[i]);
+  }
+  return longest.length;
+}

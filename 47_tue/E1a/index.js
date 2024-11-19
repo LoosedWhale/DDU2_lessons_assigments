@@ -23,7 +23,13 @@ function badFunctionName1 (n) {
 }
 
 console.log("WDU3");
+// Prints WDU3
 badFunctionName1(5);
+// Prints WDU1, Too low, WDU2
 let a = prompt("Hi there");
+// If the user writes "yoman" on the prompt it will print "WDU1", "Too low", "WDU2"
 badFunctionName1(a);
+// Prints WDU1, Too low, WDU2 if the user writes "yoman" on the prompt 
 console.log("WDU4");
+// Prints WDU4
+

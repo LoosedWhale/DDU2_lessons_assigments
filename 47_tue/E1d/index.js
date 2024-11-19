@@ -17,11 +17,18 @@ function f2 (n) {
 }
 
 let a = f1(f2(4));
+// a = f1(6) = 5
 a += f2(f1(2));
+// a = 5 + f2(1) = 5 + 3 = 8
 console.log(a);
+// 8
 f2(56);
+// 56 + 2 = 58
 console.log(a);
+// 8
 a = 1;
+// a = 1
 console.log(a);
+// 1
 
 
