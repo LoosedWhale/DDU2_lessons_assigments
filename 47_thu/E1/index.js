@@ -18,10 +18,12 @@ const o1 = {
 
 // 1
 console.log(o1.f1(4,5));
+//Svar: false 
 
 // 2
 let a = o1.f2(1,1);
 console.log(a);
+//Svar: 2
 
 // 3
 if (o1.f1(42, 21)) {
@@ -29,6 +31,7 @@ if (o1.f1(42, 21)) {
 } else {
   console.log("B");
 }
+//Svar: A
 
 // 4
 if (o1.f1(1,2)) {
@@ -37,9 +40,13 @@ if (o1.f1(1,2)) {
   console.log(o1.f3(1, o1.f2(6,4)) + o1.f2(2,2));
 }
 
+// Svar: -9 + 4 = -5
+
 // 5
 for (let i = 0; i < 2; i++) {
   for (let j = i; j < i + 2; j++) {
     console.log(o1.f2(i, j));
   }
 }
+
+//Svar:  0, 1, 1, 2
